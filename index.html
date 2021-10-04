@@ -29,7 +29,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" cro
 <div class="mb-3"><label class="form-label">Email address</label>
 <input type="email" class="form-control wid" value=""></div>
 
-<div class="mb-3"><label class="form-label">Select country</label> <br>
+<div class="mb-3"><label class="form-label">Phone number</label> <br>
  <input id="phone" class="form-control wid" name="phone" type="tel"> </div>
 
 <div class="mb-3"><label class="form-label">Select country</label><div><select class="dropdown" name="rcrs-country">
@@ -71,7 +71,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" cro
 		var y = x[0].title.split("+")
 		
 		var phone = document.getElementById("phone");
-		phone.value = "(" + y[1] + ")" + phone.value ;
+		phone.value =  y[1] + phone.value ;
 		
 		alert("Thank you for submitting! We will reach you as soon as possible!");
 
