@@ -64,9 +64,17 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" cro
   </script>
 
   <script>
-	  function Submitted() {
-  alert("Thank you for submitting! We will reach you as soon as possible!");
-}
+	  
+	function Submitted() {
+		var x = document.getElementsByClassName("iti__selected-dial-code");
+		
+		var phone = document.getElementById("phone");
+		phone.value = x[0].innerHTML + phone.value ;
+		
+		alert("Thank you for submitting! We will reach you as soon as possible!");
+
+	}
+
   </script>
   
 </html>
